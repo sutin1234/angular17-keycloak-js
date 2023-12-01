@@ -83,7 +83,8 @@ export class AppComponent implements OnInit {
 
   async logout() {
     if (this.kc !== undefined) {
-      await this.kc.logout({ redirectUri: 'https://web-portal-devsit.nonprod.ngernhaijai.com/' })
+      // await this.kc.logout({ redirectUri: 'https://web-portal-devsit.nonprod.ngernhaijai.com/' })
+      await this.kc.logout()
       window.location.reload()
     }
   }
